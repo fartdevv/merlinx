@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2022 The LineageOS Project
 #
@@ -13,6 +14,7 @@ $(call inherit-product, device/xiaomi/merlinx/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product-if-exists, vendor/lineage-priv/keys/keys.mk)
 
 PRODUCT_NAME := lineage_merlinx
 PRODUCT_DEVICE := merlinx
